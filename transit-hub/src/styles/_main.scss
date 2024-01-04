@@ -1,11 +1,102 @@
 //-----------------------------------Fonts-------------------------------------------
+
 @import "fonts";
 
 $family-rubik-regular: "Rubik-Regular";
 $family-rubik-light: "Rubik-Light";
 
-$main-line-height: 140%;
-$second-line-height: 120%;
+$accent-font-size: 55px;
+$accent-mob-font-size: 35px;
+$card-font-size: 20px;
+$main-font-size: 18px;
+$main-mob-font-size: 15px;
+$small-text-size: 14px;
+$small-mob-text-size: 12px;
 
+$main-line-height:    140%;
+$second-line-height:  120%;
+
+//-----------------------------------------------------------------------------------
+
+
+//-----------------------------------Colors-------------------------------------------
+
+$main-color:   #EFEFEF;
+$second-color: #252A32;
+$accent-color: #CF5507;
+$second-accent-color: #001F29;
+
+$main-text-color: #242D30;
+
+$footer-color: #C5C5C5;
+
+//-----------------------------------------------------------------------------------
+
+
+//-----------------------------------Texts-------------------------------------------
+
+//-- accent-text
+@mixin accent-text($font-size) {
+    font-family: $family-rubik-regular;
+    font-size: $font-size;
+    line-height: $second-line-height;
+    color: $second-accent-color;
+}
+
+@mixin accent-text-desctop() {
+    @include accent-text($accent-font-size);
+}
+
+@mixin accent-text-mobile() {
+    @include accent-text($accent-mob-font-size);
+}
+
+//-- main-text
+@mixin main-text($font-size) {
+    font-family: $family-rubik-light;
+    font-size: $font-size;
+    line-height: $main-line-height;
+    color: $main-text-color;
+}
+
+@mixin main-text-desctop() {
+    @include main-text($main-font-size);
+}
+
+@mixin main-text-mobile() {
+    @include main-text($accent-mob-font-size);
+}
+
+//-- small-text
+@mixin small-text($font-size, $color) {
+    font-family: $family-rubik-light;
+    font-size: $font-size;
+    line-height: $main-line-height;
+    color: $color;
+}
+
+@mixin small-text-desctop($color) {
+    @include main-text($small-text-size, $color);
+}
+
+@mixin small-text-mobile($color) {
+    @include main-text($small-mob-text-size, $color);
+}
+
+//-- fields-buttons
+@mixin fields-buttons-text($font-size, $color) {
+    font-family: $family-rubik-light;
+    font-size: $font-size;
+    line-height: $main-line-height;
+    color: $color;
+}
+
+//-- card-text
+@mixin card-text() {
+    font-family: $family-rubik-regular;
+    font-size: $card-font-size;
+    line-height: $second-line-height;
+    color: $main-color;
+}
 
 //-----------------------------------------------------------------------------------
