@@ -100,3 +100,15 @@ $footer-color: #C5C5C5;
 }
 
 //-----------------------------------------------------------------------------------
+
+*,
+::after, 
+::before,
+body {
+    @include main-text-desctop();
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
