@@ -1,1 +1,101 @@
 @import "/src/styles/main.scss";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // height: 88px;
+    width: 100%;
+    background-color: $second-color;
+
+    .header__menu {   
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+
+        .header__content {
+            @include block-content();
+
+            justify-content: space-between;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .header__burger-menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 12px;
+
+                cursor: pointer;
+
+                .header__burger-menu-icon {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+
+                .header__burger-menu-text > span {
+                    @include small-text-desctop($main-color);
+                }
+            }
+
+            .header__logo {
+                width: 45px;
+                height: 28px;
+            }
+
+            .header__phone > a {
+                @include small-text-desctop($main-color);
+            }
+        }
+    }
+}
+
+.header__hidden-menu {
+    background-color: $second-color;
+    width: 83.33333333333333%;
+
+    &.hidden {
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+}
+
+.header__menu-item {
+    @include small-text-desctop($main-color);
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .header__hidden-menu {    
+        ul {
+            flex-direction: column;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 485px) {
+    .header__phone {
+        display: none;
+    }
+
+    .header__hidden-menu {    
+        ul {
+            flex-direction: column;
+        }
+    }
+}
