@@ -7,9 +7,12 @@ $family-rubik-light: "Rubik-Light";
 
 $accent-font-size: 55px;
 $accent-mob-font-size: 35px;
+
 $card-font-size: 20px;
+
 $main-font-size: 18px;
 $main-mob-font-size: 15px;
+
 $small-text-size: 14px;
 $small-mob-text-size: 12px;
 
@@ -64,7 +67,7 @@ $footer-color: #C5C5C5;
 }
 
 @mixin main-text-mobile() {
-    @include main-text($accent-mob-font-size);
+    @include main-text($main-mob-font-size);
 }
 
 //-- small-text
@@ -81,6 +84,14 @@ $footer-color: #C5C5C5;
 
 @mixin small-text-mobile($color) {
     @include small-text($small-mob-text-size, $color);
+}
+
+//-- footer-text
+@mixin footer-text() {
+    font-family: $family-rubik-regular;
+    font-size: $small-text-size;
+    line-height: $main-line-height;
+    color: $second-accent-color;
 }
 
 //-- fields-buttons
@@ -115,7 +126,7 @@ body {
 
 a {
     text-decoration: none;
-    
+
 }
 
 @mixin block-content() {

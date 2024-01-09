@@ -1,1 +1,71 @@
 @import "/src/styles/main.scss";
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $footer-color;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    .footer__content {
+        @include block-content();
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .footer__info > span {
+            @include footer-text();
+        }
+
+        .footer__logo {
+            margin-right: 70px;
+        }
+
+        .footer__contacs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .footer__contacs-text {
+                @include footer-text();
+            }
+
+            .footer__contacts-phone > a {
+                @include accent-text-desctop();
+                font-size: $main-font-size;
+                line-height: $main-line-height;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .footer__content {    
+        flex-direction: column!important;
+        justify-content: unset;
+        text-align: center;
+        gap: 40px;
+
+        // .footer__logo {
+            
+        // }
+
+        & > :nth-child(1) {
+            order: 3;
+        }
+    
+        & > :nth-child(2) {
+          order: 1;
+          margin-right: 0px!important;
+        }
+    
+        & > :nth-child(3) {
+          order: 2;
+        }
+    }
+}
