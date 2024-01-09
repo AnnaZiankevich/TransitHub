@@ -5,6 +5,7 @@ import Car from '../../views/car/Car.jsx'
 import FreightCar from '../../views/freight-car/FreightCar.jsx'
 import Career from '../../views/career/Career.jsx'
 import Contacts from '../../views/contacts/Contacs.jsx'
+import NotFound from '../../views/404/404.jsx'
 import { Route, Routes } from "react-router-dom";
 
 function MainComponent() {
@@ -17,6 +18,7 @@ function MainComponent() {
                 <Route exact path="/freight-car" element={<FreightCar />} /> 
                 <Route exact path="/career" element={<Career />}/>
                 <Route exact path="/contacts" element={<Contacts />}/>
+                <Route exact path="/*" element={<NotFound />} /> 
             </Routes>
         </div>
      );

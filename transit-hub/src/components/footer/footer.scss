@@ -6,10 +6,10 @@ footer {
     justify-content: center;
     background-color: $footer-color;
 
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
+    // width: 100%;
 
     .footer__content {
         @include block-content();
@@ -42,30 +42,26 @@ footer {
             }
         }
     }
-}
 
-@media only screen and (max-width: 485px) {
-    .footer__content {    
-        flex-direction: column!important;
-        justify-content: unset;
-        text-align: center;
-        gap: 40px;
-
-        // .footer__logo {
-            
-        // }
-
-        & > :nth-child(1) {
-            order: 3;
-        }
+    @media only screen and (max-width: 485px) {
+        .footer__content {    
+            flex-direction: column;
+            justify-content: unset;
+            text-align: center;
+            gap: 40px;
     
-        & > :nth-child(2) {
-          order: 1;
-          margin-right: 0px!important;
-        }
-    
-        & > :nth-child(3) {
-          order: 2;
+            & > :nth-child(1) {
+                order: 3;
+            }
+        
+            & > :nth-child(2) {
+              order: 1;
+              margin-right: 0px;
+            }
+        
+            & > :nth-child(3) {
+              order: 2;
+            }
         }
     }
 }

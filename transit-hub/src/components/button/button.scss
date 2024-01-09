@@ -1,0 +1,33 @@
+@import "/src/styles/main.scss";
+
+.button {
+
+    width: 281px;
+    height: 65px;
+
+    :hover {
+        cursor: pointer;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+    
+        background-color: $second-color;
+    
+        span {
+            @include accent-text-desctop();
+    
+            font-size: $main-font-size;
+            line-height: $main-line-height;
+            color: $main-color;
+        }
+    }
+
+}
