@@ -34,6 +34,27 @@ function StartPage() {
               </div>
             </div>
           </div>
+
+          <div className="start-page__services">
+            <div className="start-page__services-content">
+              <div className="start-page__services-main-block">
+                <div className="start-block__services-info">
+                  <div className="start-block__services-header">
+
+                  </div>
+                  <div className="start-block__services-text">
+
+                  </div>
+                  <div className="stert-block__button">
+                    
+                  </div>
+                </div>
+              </div>
+              <div className="start-page__service-items">
+
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   );
