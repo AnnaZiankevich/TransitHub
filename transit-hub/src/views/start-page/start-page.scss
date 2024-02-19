@@ -1,0 +1,5 @@
+@import "/src/styles/main.scss";
+
+.start-page__content {
+    @include block-content()
+}
