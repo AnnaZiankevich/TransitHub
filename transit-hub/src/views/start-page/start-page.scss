@@ -1,5 +1,92 @@
 @import "/src/styles/main.scss";
 
 .start-page__content {
-    @include block-content()
+    @include block-content();
+    height: 85vh;
+    align-items: start;
+
+    .start-page__main-info {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        margin-top: 80px;
+
+        .start-page__text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 40%;
+            margin-top: 80px;
+
+            .start-page__title {
+                @include accent-text-desctop();
+            }
+
+            .start-page__sub-title {
+                @include main-text-desctop();
+                width: 60%;
+            }
+        }
+
+        .start-page__images {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            align-items: end;
+            width: 60%;
+            height: 100%;
+
+            .start-page__img1 {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .start-page__img2 {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .start-page__button {
+                position: absolute;
+                top: 75%;
+                right: 120px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    padding: 22px 76.5px;
+                    background-color: $second-color;
+                    color: $main-color;
+
+                    width: 281px;
+                    height: 69px;
+                    border-radius: 10px;
+                }
+            }
+
+            .start-page__side-text {
+                width: 17%;
+                height: 15%;
+
+                position: absolute;
+                top: 65%;
+                left: 30%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
