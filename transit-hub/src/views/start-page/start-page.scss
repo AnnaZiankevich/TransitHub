@@ -83,10 +83,13 @@
             .start-page__side-text {
                 width: 17%;
                 height: 15%;
+                min-height: 120px;
 
                 position: absolute;
                 top: 575.32;
                 left: 30%;
+
+                aspect-ratio: auto 1/2;
 
                 img {
                     height: 100%;
@@ -95,8 +98,82 @@
             }
         }
     }
+}
 
-    .start-page__services {
-        height: 85vh;
+.start-page__services {
+    height: 85vh;
+    min-height: 788px;
+    width: 100%;
+    background: url('../../assets/img/background.jpg') top center;
+
+    .start-page__services-content {
+        @include block-content();
+        align-items: start;
+        height: 100%;
+        margin: 0 auto;
+        gap: 24px;
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        .start-page__services-main-block {
+            background-color: $main-color;
+            border-radius: 10px;
+            height: 100%;
+
+            .start-block__services-info {
+                padding: 60px 60px 35px 76px;
+
+                display: flex;
+                flex-direction: column;
+                gap: 52px;
+
+
+                .start-block__services-main-text {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    .start-block__services-header {
+                        @include accent-text-desctop();
+    
+                        font-size: 40px;
+                    }
+
+                    .start-block__services-list ul{
+                        padding-left: 18px;
+                    }
+                }
+
+                .start-block__button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        padding: 22px 72px;
+                        background-color: $second-color;
+                        color: $main-color;
+
+                        width: 281px;
+                        height: 69px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .start-page__service-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            height: 100%;
+        }
     }
 }

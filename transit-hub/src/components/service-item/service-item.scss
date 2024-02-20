@@ -1,0 +1,42 @@
+@import "/src/styles/main.scss";
+
+.service-item {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    align-items: flex-start;
+
+    .service-item__image {
+        width: 50%;
+        height: 100%;
+        aspect-ratio: auto 1/1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .service-item__description {        
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 50%;
+
+        & > .service-item__title, .service-item__subtitle {
+            @include card-text();
+        }
+
+        .service-item__link-text {
+            @include card-text();
+        }
+
+        .service-item__link-body {
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            align-items: center;
+        }
+    }
+}
