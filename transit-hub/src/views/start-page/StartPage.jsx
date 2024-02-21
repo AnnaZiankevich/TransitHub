@@ -1,5 +1,6 @@
 import React from "react"
 import './start-page.scss'
+import Button from "../../components/button/Button"
 import ServiceItem from "../../components/service-item/ServiceItem"
 import img1 from '../../assets/img/img1.png'
 import img2 from '../../assets/img/img2.png'
@@ -97,7 +98,27 @@ function StartPage() {
                   ))}
               </div>
             </div>
+      </div>
+      <div className="start-page__contact-form">
+        <div className="start-page__contact-form-content">
+          <div className="start-page__contact-form-info">
+            <div className="start-page__contact-form-text">
+              Хочешь стать нашим <br/>партнером? Оставь заявку!
+            </div>
+            <div className="start-page__contact-form-inputs">
+              <form>
+                <input placeholder="Ваше имя" />
+                <input placeholder="Ваш телефон" />
+                <div className="start-page__contact-form-button">
+                  <button type="submit" >
+                    <span>Оставить заявку</span>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
+        </div>
+      </div>
     </div>
   );
 }

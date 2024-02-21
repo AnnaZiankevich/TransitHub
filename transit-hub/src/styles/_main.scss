@@ -129,6 +129,30 @@ a {
 
 }
 
+input {
+    @include main-text-desctop();
+
+    background-color: $main-color;
+    border: 1.35px solid $second-accent-color;
+    padding: 22px 12px 22px 25px;
+    color: $second-accent-color;
+    border-radius: 10px;
+
+    width: 281px;
+    height: 69px;
+
+    &::placeholder {
+        color: $second-accent-color;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
 @mixin block-content() {
     width: 83.33333333333333%;
     display: flex;
