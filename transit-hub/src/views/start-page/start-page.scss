@@ -105,6 +105,7 @@
     min-height: 788px;
     width: 100%;
     background: url('../../assets/img/background.jpg') top center;
+    background-size: 102% 100%;
 
     .start-page__services-content {
         @include block-content();
