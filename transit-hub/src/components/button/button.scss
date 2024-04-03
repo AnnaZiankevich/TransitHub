@@ -9,6 +9,10 @@
         cursor: pointer;
     }
 
+    @media screen and (max-width: 1060px) {
+        width: 100%;
+    }
+
     button {
         display: flex;
         justify-content: center;

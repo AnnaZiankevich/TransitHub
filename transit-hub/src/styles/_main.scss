@@ -144,6 +144,11 @@ input {
     &::placeholder {
         color: $second-accent-color;
     }
+
+    @media screen and (max-width: 1060px) {
+        @include main-text-mobile();
+        width: 100%;
+    }
 }
 
 form {
@@ -151,6 +156,12 @@ form {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+
+    @media screen and (max-width: 1060px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
 }
 
 @mixin block-content() {
