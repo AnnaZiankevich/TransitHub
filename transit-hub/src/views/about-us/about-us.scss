@@ -1,0 +1,97 @@
+@import "/src/styles/main.scss";
+
+.about-us {
+
+    .about-us__section {
+        @include block-content();
+        align-items: start;
+        flex-direction: column;
+        height: 100%;
+    
+        .about-us__container {
+            display: flex;
+            justify-content: space-between;
+            padding: 80px 0;
+
+            .about-us__hero-content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .about-us__title {
+                    @include accent-text-desctop();
+                }
+            
+                .about-us__text {
+                    @include main-text-desctop();
+                }
+            }
+
+            .about-us__banner {
+                width: 60%;
+            }
+        }
+    }
+
+    .about-us__benefits {
+        @include block-content();
+        align-items: start;
+        flex-direction: column;
+        height: 100%;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 120px;
+
+        .about-us__benefits-title {
+            @include accent-text-desctop();
+        }
+
+        .about-us__benefits-desc{
+            @include main-text-desctop();
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .about-us__benefits-list {
+            width: 100%;
+
+            .about-us__benefits-list-body {
+            display: grid;
+            grid-auto-rows: 460px;
+            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+
+            .about-us__benefits-item {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                justify-content: start;
+                background-color: rgba(207, 85, 7, 0.7);
+                border-radius: 20px;
+                text-align: center;
+                padding: 20px 10px;
+                cursor: pointer;
+                transition: ease-in;
+                transition-duration: 0.3s;
+                transition-delay: 0.05s;
+
+                &:hover {
+                    background-color: rgba(120, 110, 104, 0.7);
+                    transition: ease-in;
+                    transition-duration: 0.3s;
+                    transition-delay: 0.05s;
+                }
+
+                .about-us__benefits-item-title {
+                    @include accent-text-desctop();
+                    font-size: $card-font-size;
+                    font-weight: 600;
+                }
+            }
+          }
+        }
+    }
+}

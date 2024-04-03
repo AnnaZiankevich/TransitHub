@@ -1,6 +1,8 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import './start-page.scss'
 import Button from "../../components/button/Button"
+import ContactForm from "../../components/ContactForm/ContactForm"
 import ServiceItem from "../../components/service-item/ServiceItem"
 import img1 from '../../assets/img/img1.png'
 import img2 from '../../assets/img/img2.png'
@@ -15,13 +17,13 @@ function StartPage() {
       img: legk,
       title: 'Легковой автомобиль',
       subtitle: 'до 20 кг',
-      link: '#',
+      link: '/car',
     }, 
     {
       img: gruz,
       title: 'Грузовой автомобиль',
       subtitle: 'до 1,4т',
-      link: '#',
+      link: '/freight-car',
     },
   ];
 
@@ -53,9 +55,9 @@ function StartPage() {
                 <img src={img2} alt="img2"/>
               </div>
               <div className="start-page__button">
-                <a type="button" href="#">
+                <Link type="button" to={"about-us"}>
                   Узнать больше
-                </a>
+                </Link>
               </div>
               <div className="start-page__side-text">
                 <img src={sideText} alt="side-text" />
@@ -81,9 +83,9 @@ function StartPage() {
                     </div>
                   </div>
                   <div className="start-block__button">
-                    <a type="button" href="#">
+                    <Link type="button" to={"contacts"}>
                       Выбрать услугу
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -99,26 +101,7 @@ function StartPage() {
               </div>
             </div>
       </div>
-      <div className="start-page__contact-form">
-        <div className="start-page__contact-form-content">
-          <div className="start-page__contact-form-info">
-            <div className="start-page__contact-form-text">
-              Хочешь стать нашим <br/>партнером? Оставь заявку!
-            </div>
-            <div className="start-page__contact-form-inputs">
-              <form>
-                <input placeholder="Ваше имя" />
-                <input placeholder="Ваш телефон" />
-                <div className="start-page__contact-form-button">
-                  <button type="submit" >
-                    <span>Оставить заявку</span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContactForm />
     </div>
   );
 }

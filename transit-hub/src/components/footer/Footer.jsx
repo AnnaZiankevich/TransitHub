@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 import './footer.scss'
 import darkLogo from '../../assets/img/dark-logo.svg'
 
@@ -13,7 +14,9 @@ function Footer() {
           </span>
         </div>
         <div className="footer__logo">
-          <img src={darkLogo} alt="dark-logo" />
+          <Link to="/">
+            <img src={darkLogo} alt="dark-logo" />
+          </Link>
         </div>
         <div className="footer__contacs">
             <div className="footer__contacs-text">

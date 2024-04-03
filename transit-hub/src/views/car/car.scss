@@ -1,0 +1,24 @@
+@import "/src/styles/main.scss";
+
+.car {
+    @include block-content();
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 80px;
+    margin-bottom: 120px;
+
+    .service-item__title, .service-item__subtitle, .service-item__link-text {
+        color: $main-text-color!important;
+    }
+
+    .service-item__link-arrow img {
+        filter: brightness(0.5);
+    }
+}
+
+.car .service-item .service-item__description > .service-item__title {
+    @include accent-text-desctop();
+    $accent-font-size: 55px!important;
+    $family-rubik-regular: "Rubik-Regular"!important;
+}

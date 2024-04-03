@@ -24,7 +24,9 @@ function Header() {
                 </div>
             </div>
             <div className="header__logo">
+              <Link to="/">
                 <img src={logo} alt="logo" />
+              </Link>
             </div>
             <div className="header__phone">
               <a href="tel:+7 997 443 73 83">+7 997 443 73 83</a>

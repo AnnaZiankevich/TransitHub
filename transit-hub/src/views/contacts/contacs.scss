@@ -1,0 +1,32 @@
+@import "/src/styles/main.scss";
+
+.contacts_body {
+    @include block-content();
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+    padding-bottom: 120px;
+
+    .contacts__title {
+        @include accent-text-desctop();
+        margin-bottom: 20px;
+        margin-top: 80px;
+    }
+
+    .contacts__info {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .contacts__map {
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 40rem;
+            border-radius: 20px;
+        }
+    }
+}

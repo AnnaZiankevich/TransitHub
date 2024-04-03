@@ -1,0 +1,75 @@
+@import "/src/styles/main.scss";
+
+.career__body {
+    @include block-content();
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+    padding: 80px 0;
+
+    .career__title {
+        @include accent-text-desctop();
+        margin-bottom: 20px;
+    }
+
+    .career__table {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto-fill;
+        gap: 10px;
+
+        .career__item {
+            animation-name: career__item;
+            height: 15rem;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $footer-color;
+            overflow: hidden;
+            position: relative;
+            transition: 0.8s ease-out 100ms;
+            cursor: pointer;
+
+            .career__item-title {
+                @include accent-text-desctop();
+                font-size: 1.4rem;
+            }
+
+            .career__item-img {
+                height: 100%;
+                width: 100%;
+                z-index: 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+
+                .career__item-img-container {
+                    width: 150px;
+                    height: 150px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.8s ease-out 100ms;
+                    }
+                }
+            }
+
+            &:hover .career__item-img  .career__item-img-container img, .career__item:hover:before {
+                -webkit-transform: scale(1.9) translateX(30px);
+                -moz-transform: scale(1.9) translateX(30px);
+                -ms-transform: scale(1.9) translateX(30px);
+                -o-transform: scale(1.9) translateX(30px);
+                transform: scale(1.9) translateX(30px);
+                filter: grayscale(0%);
+                transition: 0.8s ease-out 100ms;
+            }
+        }
+    }
+}
