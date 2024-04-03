@@ -6,10 +6,19 @@
     gap: 23px;
     align-items: flex-start;
 
+    @media screen and (max-width: 1220px) {
+        flex-direction: column;
+        gap: 25px;
+     }
+
     .service-item__image {
         width: 50%;
         height: 100%;
         aspect-ratio: auto 1/1;
+
+        @media screen and (max-width: 681px) {
+            width: 100%;
+        }
 
         img {
             width: 100%;

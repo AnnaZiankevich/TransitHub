@@ -16,6 +16,7 @@
         gap: 12px;
         align-items: center;
         justify-content: center;
+        z-index: 999;
 
         .header__content {
             @include block-content();
