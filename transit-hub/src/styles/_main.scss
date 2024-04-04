@@ -122,6 +122,10 @@ body {
     -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 1110px) {
+        @include main-text-mobile();
+    }  
 }
 
 a {

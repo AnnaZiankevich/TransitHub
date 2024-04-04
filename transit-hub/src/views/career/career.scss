@@ -11,6 +11,10 @@
     .career__title {
         @include accent-text-desctop();
         margin-bottom: 20px;
+
+        @media screen and (max-width: 1110px) {
+            @include accent-text-mobile();
+        }
     }
 
     .career__table {
@@ -19,6 +23,14 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto-fill;
         gap: 10px;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 597px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .career__item {
             animation-name: career__item;
@@ -38,6 +50,10 @@
             .career__item-title {
                 @include accent-text-desctop();
                 font-size: 1.4rem;
+
+                @media screen and (max-width: 1110px) {
+                    @include main-text-mobile();
+                }
             }
 
             .career__item-img {

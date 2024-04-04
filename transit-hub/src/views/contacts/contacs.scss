@@ -12,6 +12,11 @@
         @include accent-text-desctop();
         margin-bottom: 20px;
         margin-top: 80px;
+
+        @media screen and (max-width: 1110px) {
+            @include accent-text-mobile();
+            margin-bottom: 5px;
+        }
     }
 
     .contacts__info {
