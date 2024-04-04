@@ -17,8 +17,18 @@
     }
 }
 
+.car .service-item .service-item__description {
+    @media screen and (max-width: 1110px) {
+        width: 100%;
+    }
+}
+
 .car .service-item .service-item__description > .service-item__title {
     @include accent-text-desctop();
     $accent-font-size: 55px!important;
     $family-rubik-regular: "Rubik-Regular"!important;
+
+    @media screen and (max-width: 1110px) {
+        @include accent-text-mobile();
+    }
 }
