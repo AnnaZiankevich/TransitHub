@@ -18,7 +18,7 @@ function MainComponent() {
                 <Route exact path="/freight-car" element={<FreightCar />} /> 
                 <Route exact path="/career" element={<Career />}/>
                 <Route exact path="/contacts" element={<Contacts />}/>
-                <Route exact path="/*" element={<NotFound />} /> 
+                {/* <Route exact path="/*" element={<NotFound />} />  */}
             </Routes>
         </div>
      );
