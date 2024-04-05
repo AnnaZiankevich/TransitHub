@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77cd8374.css",
+    "main.js": "/static/js/main.06eb0e90.js",
+    "static/media/car1.jpg": "/static/media/car1.069be1756b3d6812e58b.jpg",
+    "static/media/truck3.jpg": "/static/media/truck3.124ed85899e13580f5a8.jpg",
+    "static/media/gruzovoy.jpg": "/static/media/gruzovoy.6244f09b259a6de52602.jpg",
+    "static/media/background.jpg": "/static/media/background.e021c04a2dcea8ff07cc.jpg",
+    "static/media/img2.png": "/static/media/img2.fc1fd4f1f853c536a8bb.png",
+    "static/media/left.png": "/static/media/left.1456946bd32a776b08cb.png",
+    "static/media/legkovoy.jpg": "/static/media/legkovoy.048fe98e117839e630a3.jpg",
+    "static/media/img1.png": "/static/media/img1.4e7cf7dbbc9b2d85b5a7.png",
+    "static/media/right.png": "/static/media/right.676db98c31984acb911a.png",
+    "static/media/truck1.png": "/static/media/truck1.c5570492c3aeabb54bab.png",
+    "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.55fa11cdc8b9a3ee842f.ttf",
+    "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.9d2ccd264dc61b954019.ttf",
+    "static/media/geography.png": "/static/media/geography.4fb4b9136b8f29b81e81.png",
+    "static/media/side-text.png": "/static/media/side-text.9a25e0add88601b009b7.png",
+    "static/media/hr.png": "/static/media/hr.b1bbb746e9c47ffbe5d6.png",
+    "static/media/driver1.png": "/static/media/driver1.706d2038ee051033dd48.png",
+    "static/media/accountant.png": "/static/media/accountant.f41aae63a1216ebe05bf.png",
+    "static/media/driver.png": "/static/media/driver.7aa63dac3d97fdbe9fc5.png",
+    "static/media/dispatcher.png": "/static/media/dispatcher.16a0a42ec599a7db3ae2.png",
+    "static/media/loader.png": "/static/media/loader.b1b3f6395d56aabfeb88.png",
+    "static/media/manager.png": "/static/media/manager.85b596cf71694f1ecf1c.png",
+    "static/media/burger-menu.svg": "/static/media/burger-menu.045bc1a9a377ee07ffc5efd8e4a25b95.svg",
+    "index.html": "/index.html",
+    "static/media/arrow.svg": "/static/media/arrow.c42f4c3c877811f8a1937f61260f0ab0.svg",
+    "static/media/logo.svg": "/static/media/logo.88ba94a0a3a7c33868af9a8994179e3b.svg",
+    "static/media/dark-logo.svg": "/static/media/dark-logo.947b596b75e15e02956a144a83384b16.svg",
+    "main.77cd8374.css.map": "/static/css/main.77cd8374.css.map",
+    "main.06eb0e90.js.map": "/static/js/main.06eb0e90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77cd8374.css",
+    "static/js/main.06eb0e90.js"
+  ]
+}
