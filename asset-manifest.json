@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TransitHub/static/css/main.57fe2e58.css",
-    "main.js": "/TransitHub/static/js/main.ad6551c8.js",
+    "main.js": "/TransitHub/static/js/main.2e414880.js",
     "static/media/car1.jpg": "/TransitHub/static/media/car1.069be1756b3d6812e58b.jpg",
     "static/media/truck3.jpg": "/TransitHub/static/media/truck3.124ed85899e13580f5a8.jpg",
     "static/media/gruzovoy.jpg": "/TransitHub/static/media/gruzovoy.6244f09b259a6de52602.jpg",
@@ -29,10 +29,10 @@
     "static/media/logo.svg": "/TransitHub/static/media/logo.2493339fa0f41a431f67969fd69581c1.svg",
     "static/media/dark-logo.svg": "/TransitHub/static/media/dark-logo.8f3518e7a432cef5af17d8253f652134.svg",
     "main.57fe2e58.css.map": "/TransitHub/static/css/main.57fe2e58.css.map",
-    "main.ad6551c8.js.map": "/TransitHub/static/js/main.ad6551c8.js.map"
+    "main.2e414880.js.map": "/TransitHub/static/js/main.2e414880.js.map"
   },
   "entrypoints": [
     "static/css/main.57fe2e58.css",
-    "static/js/main.ad6551c8.js"
+    "static/js/main.2e414880.js"
   ]
 }
