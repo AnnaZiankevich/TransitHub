@@ -24,7 +24,7 @@ function Header() {
                 </div>
             </div>
             <div className="header__logo">
-              <Link to="/home">
+              <Link to="/">
                 <img src={logo} alt="logo" />
               </Link>
             </div>
@@ -34,7 +34,7 @@ function Header() {
         </div>
         <div className={visible ? "header__hidden-menu" : "header__hidden-menu hidden"}>
             <ul className="header__menu-list">
-                <Link to="/home">
+                <Link to="/">
                   <li className="header__menu-item">Главная</li>
                 </Link>
                 <Link to="/about-us">

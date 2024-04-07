@@ -14,7 +14,7 @@ function Footer() {
           </span>
         </div>
         <div className="footer__logo">
-          <Link to="/home">
+          <Link to="/">
             <img src={darkLogo} alt="dark-logo" />
           </Link>
         </div>
