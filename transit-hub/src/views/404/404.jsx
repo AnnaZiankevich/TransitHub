@@ -16,7 +16,7 @@ function NotFound() {
                     главную страницу и мы поможем вам найти нужный маршрут.
                 </div>
                 <div className="not-found__button">
-                    <Button label='На главную' link='/' />
+                    <Button label='На главную' link='/TransitHub' />
                 </div>
             </div>
             <div className="not-found__img">
