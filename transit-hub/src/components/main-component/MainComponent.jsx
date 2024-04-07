@@ -12,7 +12,7 @@ function MainComponent() {
     return ( 
         <div className="page-content">
             <Routes>
-                <Route exact path="/" element={<StartPage />} /> 
+                <Route exact path="/TransitHub" element={<StartPage />} /> 
                 <Route exact path="/about-us" element={<AboutUs />}/>
                 <Route exact path="/car" element={<Car />}/>
                 <Route exact path="/freight-car" element={<FreightCar />} /> 
