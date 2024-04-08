@@ -24,7 +24,7 @@ function Header() {
                 </div>
             </div>
             <div className="header__logo">
-              <Link to="/TransitHub">
+              <Link to="/">
                 <img src={logo} alt="logo" />
               </Link>
             </div>
